@@ -4,8 +4,6 @@ using avmOP.DLL.Utils;
 using avmOP.DLL.Models.Items;
 using System;
 using avmOP.Forms;
-using System.Net.Http;
-using Newtonsoft.Json;
 
 namespace avmOP
 {
@@ -25,10 +23,7 @@ namespace avmOP
 		{		
 			try
 			{
-				var client = new HttpClient();
-				var response = client.GetAsync("https://api.themoviedb.org/3/movie/76341?api_key=bc7bf315511c72e32a37076e41a08f45").Result;
-				var test = response.Content.ReadAsStringAsync().Result;
-				dynamic stuff = JsonConvert.DeserializeObject(test);
+				var test = JsonUtil.TestJson();
 			}
 			catch(Exception ex)
 			{
