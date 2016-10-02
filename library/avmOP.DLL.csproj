@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,7 +50,6 @@
     <Compile Include="Constants\Types\EnumFileType.cs" />
     <Compile Include="Exceptions\ExceptionFactory.cs" />
     <Compile Include="Exceptions\HandeldException.cs" />
-    <Compile Include="Models\App\Configuration.cs" />
     <Compile Include="Models\Items\Audio.cs" />
     <Compile Include="Models\Items\Extension.cs" />
     <Compile Include="Models\Items\ItemFactory.cs" />
@@ -59,10 +59,7 @@
     <Compile Include="Models\Items\NFO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\FileUtil.cs" />
-    <Compile Include="Utils\XMLReader.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Models\App\XMLKeyValue.cs" />
+    <Compile Include="Utils\XMLUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Constants\ListExtensions.cs" />

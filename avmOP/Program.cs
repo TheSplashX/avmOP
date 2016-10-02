@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace MovieScraper
+namespace avmOP
 {
 	static class Program
 	{

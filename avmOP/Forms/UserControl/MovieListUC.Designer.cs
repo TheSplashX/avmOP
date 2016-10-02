@@ -1,4 +1,4 @@
-﻿namespace MovieScraper
+﻿namespace avmOP
 {
 	partial class MovieListUC
 	{

@@ -2,12 +2,10 @@
 using System.Windows.Forms;
 using avmOP.DLL.Utils;
 using avmOP.DLL.Models.Items;
-using System.Xml;
 using System;
-using MovieScrapper.DLL.Utils;
 using avmOP.Forms;
 
-namespace MovieScraper
+namespace avmOP
 {
 	public partial class MainForm : Form
 	{
@@ -25,7 +23,8 @@ namespace MovieScraper
 		{		
 			try
 			{
-				XMLReader.ReadXML("config.xml");
+				
+				
 			}
 			catch(Exception ex)
 			{
@@ -63,6 +62,11 @@ namespace MovieScraper
 		private void pnlMovieList_ControlRemoved(object sender, ControlEventArgs e)
 		{
 
+		}
+
+		private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			new AboutForm().Show();
 		}
 	}
 }

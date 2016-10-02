@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using avmOP.DLL.Models.Items;
 
-namespace MovieScraper
+namespace avmOP
 {
 	public partial class MovieListUC : UserControl
 	{

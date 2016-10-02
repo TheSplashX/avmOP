@@ -1,5 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <moviefolder>d:\Share\Videos
-  <moviefolder>c:\Share\Videos</moviefolder>
+  <videofolder>d:\Share\Videos</videofolder>
+  <videofolder>c:\Share\Videos</videofolder>
+  <audiofolder>c:\Share\Apps</audiofolder>
 </configuration>

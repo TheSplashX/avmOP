@@ -1,6 +1,5 @@
-﻿using avmOP.DLL.Utils;
-
-namespace MovieScraper
+﻿
+namespace avmOP
 {
 	partial class MainForm
 	{
@@ -40,6 +39,7 @@ namespace MovieScraper
 			this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
 			this.pnlMovieList = new System.Windows.Forms.FlowLayoutPanel();
+			this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1.SuspendLayout();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -104,6 +104,8 @@ namespace MovieScraper
 			// 
 			// helpToolStripMenuItem
 			// 
+			this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem});
 			this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
 			this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.helpToolStripMenuItem.Text = "Help";
@@ -132,6 +134,13 @@ namespace MovieScraper
 			this.pnlMovieList.TabIndex = 0;
 			this.pnlMovieList.ControlAdded += new System.Windows.Forms.ControlEventHandler(this.pnlMovieList_ControlAdded);
 			this.pnlMovieList.ControlRemoved += new System.Windows.Forms.ControlEventHandler(this.pnlMovieList_ControlRemoved);
+			// 
+			// aboutToolStripMenuItem
+			// 
+			this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+			this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.aboutToolStripMenuItem.Text = "About";
+			this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
 			// 
 			// MainForm
 			// 
@@ -168,6 +177,7 @@ namespace MovieScraper
 		private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
 		private System.Windows.Forms.SplitContainer splitContainer1;
 		private System.Windows.Forms.FlowLayoutPanel pnlMovieList;
+		private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
 	}
 }
 
