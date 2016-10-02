@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
-using MovieScrapper.DLL.Exceptions;
+using avmOP.DLL.Exceptions;
 
 namespace avmOP.DLL.Utils
 {

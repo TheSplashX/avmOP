@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
-    <AssemblyVersion>1.0.5.0</AssemblyVersion>
+    <AssemblyVersion>1.0.9.0</AssemblyVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -49,7 +49,6 @@
     <Compile Include="Constants\Genres\EnumVideoGenre.cs" />
     <Compile Include="Constants\Types\EnumFileType.cs" />
     <Compile Include="Exceptions\ExceptionFactory.cs" />
-    <Compile Include="Exceptions\HandeldException.cs" />
     <Compile Include="Models\Items\Audio.cs" />
     <Compile Include="Models\Items\Extension.cs" />
     <Compile Include="Models\Items\ItemFactory.cs" />

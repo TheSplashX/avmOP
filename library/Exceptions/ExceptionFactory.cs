@@ -2,7 +2,7 @@
 using System.IO;
 using System.Xml;
 
-namespace MovieScrapper.DLL.Exceptions
+namespace avmOP.DLL.Exceptions
 {
 	public static class ExceptionFactory
 	{
