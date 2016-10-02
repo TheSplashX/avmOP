@@ -25,7 +25,7 @@ namespace avmOP.DLL.Models.Items
 
 		public Video(string p_File) : base(p_File)
 		{
-			test.
+			//test.
 		}
 	}
 }

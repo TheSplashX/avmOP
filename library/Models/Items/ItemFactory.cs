@@ -3,9 +3,9 @@ using avmOP.DLL.Utils;
 
 namespace avmOP.DLL.Models.Items
 {
-	public static class FactoryItem
+	public static class ItemFactory
 	{
-		public static Item Get(string p_File)
+		public static Item GetItem(string p_File)
 		{
 			var type = FileUtil.GetFileType(p_File);
 			switch(type)

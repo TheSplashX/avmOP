@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,19 +47,25 @@
     <Compile Include="Constants\Types\EnumImageType.cs" />
     <Compile Include="Constants\Genres\EnumVideoGenre.cs" />
     <Compile Include="Constants\Types\EnumFileType.cs" />
+    <Compile Include="Exceptions\ExceptionFactory.cs" />
+    <Compile Include="Exceptions\HandeldException.cs" />
+    <Compile Include="Models\App\Configuration.cs" />
     <Compile Include="Models\Items\Audio.cs" />
     <Compile Include="Models\Items\Extension.cs" />
-    <Compile Include="Models\Items\FactoryItem.cs" />
+    <Compile Include="Models\Items\ItemFactory.cs" />
     <Compile Include="Models\Items\Item.cs" />
     <Compile Include="Models\Items\Image.cs" />
     <Compile Include="Models\Items\Video.cs" />
     <Compile Include="Models\Items\NFO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\XMLReader.cs" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Compile Include="Configuration\ListExtensions.cs" />
+    <Compile Include="Models\App\XMLKeyValue.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\ListExtensions.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

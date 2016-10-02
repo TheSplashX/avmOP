@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using avmOP.DLL.Configuration;
+using avmOP.DLL.Constants;
 using avmOP.DLL.Constants.Types;
 using avmOP.DLL.Models.Items;
 
 namespace avmOP.DLL.Utils
 {
-	public class FileUtil
+	public static class FileUtil
 	{
 		public static List<string> GetAllFilesFromDir(string p_Dir) {
 			return Directory.GetFiles(p_Dir, "*", SearchOption.AllDirectories).Where(file => ((File.GetAttributes(file) & FileAttributes.Hidden) != FileAttributes.Hidden)).ToList();

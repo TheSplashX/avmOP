@@ -2,6 +2,10 @@
 using System.Windows.Forms;
 using avmOP.DLL.Utils;
 using avmOP.DLL.Models.Items;
+using System.Xml;
+using System;
+using MovieScrapper.DLL.Utils;
+using avmOP.Forms;
 
 namespace MovieScraper
 {
@@ -13,13 +17,20 @@ namespace MovieScraper
 		public MainForm()
 		{
 			this.InitializeComponent();
-			this.initMovieList();
+			//this.initMovieList();
 			this.initForm();
 		}
 
 		private void initForm()
-		{
-
+		{		
+			try
+			{
+				XMLReader.ReadXML("config.xml");
+			}
+			catch(Exception ex)
+			{
+				new ExceptionForm(ex.Message);
+			}
 		}
 
 		internal void SetSelectedMovie(Video p_Video)
@@ -33,13 +44,14 @@ namespace MovieScraper
 			var itemList = new List<Item>();
 			foreach(string file in fileList)
 			{
-				var item = FactoryItem.Get(file);
+				var item = ItemFactory.GetItem(file);
 				itemList.Add(item);
 				if(item is Video)
 				{
 					this.pnlMovieList.Controls.Add(new MovieListUC((Video)item));
 					FileUtil.MoveFile(item, @"d:\Share\Videos");
 				}
+				//ExceptionFactory.GetException(ex);
 			}
 		}
 

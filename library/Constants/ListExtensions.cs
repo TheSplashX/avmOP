@@ -2,7 +2,7 @@
 using avmOP.DLL.Models.Items;
 using System.Collections.Generic;
 
-namespace avmOP.DLL.Configuration
+namespace avmOP.DLL.Constants
 {
     public class ListExtensions
     {
